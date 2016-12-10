@@ -15,30 +15,32 @@ An Interactive Sound Generating Device!
 <img src="build Prototype final.png" alt="how it works" width="800">
 
 <h1>Tutorial</h1>
-<h3>You Need:</h3>
+<h3>The light Theremin:</h3>
+
+<h3>Step One: Parts List and required materials:</h3>
 <ul>
-<li>a computer with a browser, a USB port, and speakers</li>
-<li>a Makey Makey board</li>
-<li>electrical wire (insulated)</li>
-<li>alligator clips (I used 8)</li>
-<li>decorative (but conductive) wire, such as beading wire</li>
-<li>a stretched canvas</li>
-<li>paint (I used acrylic)</li>
-<li>paper</li>
-<li>black tea (I used an orange pekoe teabag)</li>
+<li>A computer capable of hosting the Arduino software, with a usb port for connectivity.</li>
+<li>An Arduino board and the stock hardware provided in the kit.</li>
+<li>The kit includes:</li>
+<li>- Male-to-male insulated electrical wire</li>
+<li>- 10k resistor</li>
+<li>- Light sensor (photocell)</li>
+<li>- Buzzer</li>
 </ul>
 
-<h3>Step One - Puzzle Design</h3>
+<h3>Step Two - Assembly</h3>
+
 <ol>
-<li>Design symbols</li>
-<li>Pick a six symbol answer</li>
-<li>Design map (be careful to avoid getting too close to the edges of the map)</li>
-<li>Paint/print puzzle</li>
-<li>Create aged paper for the puzzle hints or story by rubbing a used teabag on some paper and tearing the edges</li> 
-<li>Since mosts pens are water soluble I recommend writing the hints after the paper finishes drying</li>
+<li>Use your insulated electrical wires to connect the Arduinos power and ground to the bread board, allowing the following connections to be stable.</li>
+<li>All wires used for this project are male-to- male connectors; you will need 7 for this project.</li>
+<li>From pin 8, I connected to my buzzer (negative), which is placed on the breadboard, and also sent 5V power to the positive end of the buzzer.</li>
+<li>The analogue (0) output on the Arduino is sent to the photocell, which is grounded, and transfers via the 5v by way of the 1k resistor.</li>
+<li>The device now has complete circuit flow, and can be connected via USB to the computer.</li> 
+<li>The Arduino software then needs to be booted, and we can post our code in which is provided in the light Theremin document of this project folder.</li>
+<li>The code uses JavaScript to communicate with the Arduino software and hardware, and is explained more in step 3.</li>
 </ol>
 
-<h3>Step Two - The Wiring</h3>
+<h3>Step Three - The Wiring</h3>
 <ol>
 <li>Use beading wire to recreate the symbols on the map, poking the wires through to the other side of the canvas.
 (Some of my designs fell over the wooden frame of the canvas and were more difficult to poke through, so please take that into consideration).
