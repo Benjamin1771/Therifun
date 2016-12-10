@@ -40,21 +40,8 @@ An Interactive Sound Generating Device!
 <li>The code uses JavaScript to communicate with the Arduino software and hardware, and is explained more in step 3.</li>
 </ol>
 
-<h3>Step Three - The Wiring</h3>
-<ol>
-<li>Use beading wire to recreate the symbols on the map, poking the wires through to the other side of the canvas.
-(Some of my designs fell over the wooden frame of the canvas and were more difficult to poke through, so please take that into consideration).
-I broke the symbols down into small straight segments and added them in like staples.
-You will have to add wire to both the correct and red herring symbols, otherwise the answer would be pretty obvious.</li>
-<li>Flip over the canvas and use the insulated electrical wire to attach all of the symbols that are not part of your final solution together.
-Make sure to strip the wire so the metal of the wire is touching the metal of the beading wire.
-Note: while you could normally solder the wires together, solder and acrylic paint can probably release unhealthy fumes, and canvas can catch fire, so I used tape.</li>
-<li>Use an alligator clip to attach the dummy symbols to the space bar part of the Makey-Makey board.</li>
-<li>Add six male to male wire connectors to the W A S D F G ports on the back of the Makey-Makey board. </li>
-<li>Use alligator clips to attach the back of each remaining symbol to the other end of its respective wire connector to the Makey-Makey board. The first key to W, the second to A, and so on.</li>
-<li>Use a last alligator clip and attach it to a ground on the Makey-Makey board and a conductive object that the user will hold while solving the puzzle.</li>
-<li>Plug in the Makey-Makey board to the computer via USB.</li>
-</ol>
+<h3>Step Three - JavaScript</h3>
+<p>The JavaScript used for this project is attached in a separate document within the home document, but to explain in text gives a better sense of how the JavaScript interacts with the device. I started by declaring some variables for sensor value, sensor low and sensor high. This is. The setup sends the pin mode to the digital output, and assigns it to the photo resistor and calibrates the values to it. In the loop we read the amount of light coming into the photocell, and play tones for short periods of time (20ms) through pin 8, which is the pin we have chosen in this case for use of connection. Once the code provided is pasted into the software, as the code is uploaded to the device the user should place their hand over the sensor, to allow for the calibration process.</p>
 <img src="build images/2 - 1 add beading wire.jpg" alt="add beading wire" width="200">
 <img src="build images/2 - 2 connect all dummies.jpg" alt="connect all dummies" width="200">
 <img src="build images/2 - 3 connect all dummies to space.jpg" alt="connect to space" width="200">
@@ -64,21 +51,58 @@ Note: while you could normally solder the wires together, solder and acrylic pai
 <img src="build images/2 - 6 connect alligator cord to the ground.jpg" alt="connect alligator cord to the ground" width="200">
 <img src="build images/2 - 6 connect ground to object.jpg" alt="connect ground to object" width="200">
 
-<h3>Step Three - The Browser (webpage)</h3>
+<h3>Step Four - Connection and User Interaction)</h3>
+<p>The Arduino is connected by way of USB to the computer and the Arduino software is started. After the code is pasted in, and uploaded, the user can calibrate the sensor. As light comes into the sensor, the tone will adjust and will be played through the buzzer. The user can interact by allowing more or less light into the sensor, which will adjust the pitch. The numeric values assigned can be played with to adjust the tones and pitches we hear coming from the buzzer allowing for a variety of experiences using the device.</p>
+
+<h3>Final Device</h3>
+
+<img src="build images/finished.jpg" alt="finished project" width="400">
+<img src="build images/finished back.jpg" alt="finished project" width="400">
+<img src="build images/play the game.jpg" alt="Let's Play!" width="802">
+
+
+<h1>Tutorial</h1>
+<h3>The light Theremin:</h3>
+
+<h3>Step One: Parts List and required materials:</h3>
+<ul>
+<li>A computer capable of hosting the Arduino software, with a usb port for connectivity.</li>
+<li>An Arduino board and the stock hardware provided in the kit.</li>
+<li>The kit includes:</li>
+<li>- Male-to-male insulated electrical wire</li>
+<li>- 10k resistor</li>
+<li>- Light sensor (photocell)</li>
+<li>- Buzzer</li>
+</ul>
+
+<h3>Step Two - Assembly</h3>
+
 <ol>
-<li>In between the head tags of the document use the audio tag to preload any sound you want to play when the puzzle is solved. </li>
-<li>Write a JavaScript script that listens for “key downs” from the keyboard, stores the entries and checks them against an expected password.
-In my code the end goal is "W,A,S,D,F,G" and every time a new key is pressed on the map, the value is pushed onto the end of the 6 value password array and the oldest entry is shifted off. The function that pushes and shifts the array does not accept the same key twice in a row to allow for the player accidentally pressing the same key multiple times.</li>
-<li>If the password is correct the browser plays the selected sound.</li>
-<li>Please see index.html for more detailed comments on how the JavaScript works.</li>
+<li>Use your insulated electrical wires to connect the Arduinos power and ground to the bread board, allowing the following connections to be stable.</li>
+<li>All wires used for this project are male-to- male connectors; you will need 7 for this project.</li>
+<li>From pin 8, I connected to my buzzer (negative), which is placed on the breadboard, and also sent 5V power to the positive end of the buzzer.</li>
+<li>The analogue (0) output on the Arduino is sent to the photocell, which is grounded, and transfers via the 5v by way of the 1k resistor.</li>
+<li>The device now has complete circuit flow, and can be connected via USB to the computer.</li> 
+<li>The Arduino software then needs to be booted, and we can post our code in which is provided in the light Theremin document of this project folder.</li>
+<li>The code uses JavaScript to communicate with the Arduino software and hardware, and is explained more in step 3.</li>
 </ol>
 
-<h3>Step Four – Solve the Puzzle</h3>
-<ol>
-<li>Load the html page onto a browser</li>
-<li>Display your puzzle! (I used a desk easel to display mine)</li>
-<li>While holding the ground to the Makey-Makey board in one hand, use the other hand to solve the puzzle.</li>
-</ol>
+<h3>Step Three - JavaScript</h3>
+<p>The JavaScript used for this project is attached in a separate document within the home document, but to explain in text gives a better sense of how the JavaScript interacts with the device. I started by declaring some variables for sensor value, sensor low and sensor high. This is. The setup sends the pin mode to the digital output, and assigns it to the photo resistor and calibrates the values to it. In the loop we read the amount of light coming into the photocell, and play tones for short periods of time (20ms) through pin 8, which is the pin we have chosen in this case for use of connection. Once the code provided is pasted into the software, as the code is uploaded to the device the user should place their hand over the sensor, to allow for the calibration process.</p>
+<img src="build images/2 - 1 add beading wire.jpg" alt="add beading wire" width="200">
+<img src="build images/2 - 2 connect all dummies.jpg" alt="connect all dummies" width="200">
+<img src="build images/2 - 3 connect all dummies to space.jpg" alt="connect to space" width="200">
+<img src="build images/2 - 4 male to male wires.jpg" alt="male to male wires" width="200">
+<img src="build images/2 - 5 alligater clips labeled.jpg" alt="alligator clips" width="200">
+<img src="build images/2 - 5 use the back.jpg" alt="WASDFG" width="200">
+<img src="build images/2 - 6 connect alligator cord to the ground.jpg" alt="connect alligator cord to the ground" width="200">
+<img src="build images/2 - 6 connect ground to object.jpg" alt="connect ground to object" width="200">
+
+<h3>Step Four - Connection and User Interaction)</h3>
+<p>The Arduino is connected by way of USB to the computer and the Arduino software is started. After the code is pasted in, and uploaded, the user can calibrate the sensor. As light comes into the sensor, the tone will adjust and will be played through the buzzer. The user can interact by allowing more or less light into the sensor, which will adjust the pitch. The numeric values assigned can be played with to adjust the tones and pitches we hear coming from the buzzer allowing for a variety of experiences using the device.</p>
+
+<h3>Final Device</h3>
+
 <img src="build images/finished.jpg" alt="finished project" width="400">
 <img src="build images/finished back.jpg" alt="finished project" width="400">
 <img src="build images/play the game.jpg" alt="Let's Play!" width="802">
