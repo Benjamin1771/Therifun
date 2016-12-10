@@ -12,7 +12,7 @@ An Interactive Sound Generating Device!
 
 <p>The JavaScript written into the Arduino software tells the device to apply the devices sensor values to the frequency tones assigned. This means that as the sensor reaches a particular value, it will produce the specifically applied frequency tones we have written into our JavaScript. The two projects differ in this sense, as the light Theremin requires maximum and minimum frequencies, and the Theremin using the HC-SR04 sensor uses distance points to produce 3 different pre-determined frequency tones.</p>
 
-<img src="build Prototype final.png" alt="how it works" width="800">
+<img src="ThereminPictures/SensorFrontView.png" alt="how it works" width="800">
 
 <h1>Tutorial</h1>
 <h3>The light Theremin:</h3>
@@ -45,23 +45,14 @@ An Interactive Sound Generating Device!
 
 <h3>Step Three - JavaScript</h3>
 <p>The JavaScript used for this project is attached in a separate document within the home document, but to explain in text gives a better sense of how the JavaScript interacts with the device. I started by declaring some variables for sensor value, sensor low and sensor high. This is. The setup sends the pin mode to the digital output, and assigns it to the photo resistor and calibrates the values to it. In the loop we read the amount of light coming into the photocell, and play tones for short periods of time (20ms) through pin 8, which is the pin we have chosen in this case for use of connection. Once the code provided is pasted into the software, as the code is uploaded to the device the user should place their hand over the sensor, to allow for the calibration process.</p>
-<img src="build images/2 - 1 add beading wire.jpg" alt="add beading wire" width="200">
-<img src="build images/2 - 2 connect all dummies.jpg" alt="connect all dummies" width="200">
-<img src="build images/2 - 3 connect all dummies to space.jpg" alt="connect to space" width="200">
-<img src="build images/2 - 4 male to male wires.jpg" alt="male to male wires" width="200">
-<img src="build images/2 - 5 alligater clips labeled.jpg" alt="alligator clips" width="200">
-<img src="build images/2 - 5 use the back.jpg" alt="WASDFG" width="200">
-<img src="build images/2 - 6 connect alligator cord to the ground.jpg" alt="connect alligator cord to the ground" width="200">
-<img src="build images/2 - 6 connect ground to object.jpg" alt="connect ground to object" width="200">
 
 <h3>Step Four - Connection and User Interaction)</h3>
 <p>The Arduino is connected by way of USB to the computer and the Arduino software is started. After the code is pasted in, and uploaded, the user can calibrate the sensor. As light comes into the sensor, the tone will adjust and will be played through the buzzer. The user can interact by allowing more or less light into the sensor, which will adjust the pitch. The numeric values assigned can be played with to adjust the tones and pitches we hear coming from the buzzer allowing for a variety of experiences using the device.</p>
 
 <h3>Final Device</h3>
+<img src="ThereminPictures/SensorUncovered.png" alt="how it works" width="800">
+<img src="ThereminPictures/SensorUncoveredSide.png" alt="how it works" width="800">
 
-<img src="build images/finished.jpg" alt="finished project" width="400">
-<img src="build images/finished back.jpg" alt="finished project" width="400">
-<img src="build images/play the game.jpg" alt="Let's Play!" width="802">
 
 
 <h1>Tutorial</h1>
