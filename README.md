@@ -51,13 +51,13 @@ An Interactive Sound Generating Device!
 
 <h3>Final Device</h3>
 <img src="ThereminPictures/SensorUncovered.png" alt="Uncovered Theremin" width="400">
-<img src="ThereminPictures/SensorUncoveredSide.png" alt="Uncovered Theremin Side" width="400">
+
 
 
 
 <h1>Tutorial</h1>
-<h3>The light Theremin:</h3>
-
+<h3>The Sensor Theremin:</h3>
+<img src="ThereminPictures/SensorFrontView.jpg" alt="how it works" width="800">
 <h3>Step One: Parts List and required materials:</h3>
 <ul>
 <li>A computer capable of hosting the Arduino software, with a usb port for connectivity.</li>
@@ -93,7 +93,5 @@ An Interactive Sound Generating Device!
 <h3>Step Four - Connection and User Interaction)</h3>
 <p>After the code is uploaded, as the user places an object or themselves at different distances from the sensor, the predetermined frequency tones will be produced through the buzzer, and the LED’s will turn off and on in sequence. As the sensors distance value changes, this will adjust the pitch and LED’s. The numeric values assigned can be played with and adjusted to change the tones and pitches we hear coming from the buzzer allowing for a variety of experiences using the device.</p>
 <h3>Final Device</h3>
-
-<img src="build images/finished.jpg" alt="finished project" width="400">
-<img src="build images/finished back.jpg" alt="finished project" width="400">
-<img src="build images/play the game.jpg" alt="Let's Play!" width="802">
+<img src="ThereminPictures/SensorUncovered.jpg" alt="Uncovered Theremin" width="400">
+<img src="ThereminPictures/SensorUncoveredSide.jpg" alt="Uncovered Theremin Side" width="400">
