@@ -12,9 +12,7 @@ An Interactive Sound Generating Device!
 
 <p>The JavaScript written into the Arduino software tells the device to apply the devices sensor values to the frequency tones assigned. This means that as the sensor reaches a particular value, it will produce the specifically applied frequency tones we have written into our JavaScript. The two projects differ in this sense, as the light Theremin requires maximum and minimum frequencies, and the Theremin using the HC-SR04 sensor uses distance points to produce 3 different pre-determined frequency tones.</p>
 
-<img src="ThereminPictures/SensorFrontView.png" alt="how it works" width="800">
-
-<h1>Tutorial</h1>
+<h1>Tutorial#1</h1>
 <h3>The light Theremin:</h3>
 
 <h3>Step One: Parts List and required materials:</h3>
@@ -52,7 +50,7 @@ An Interactive Sound Generating Device!
 <h3>Final Device</h3>
 <img src="ThereminPictures/LightTheremin.jpg" alt="Uncovered Theremin" width="800">
 
-<h1>Tutorial</h1>
+<h1>Tutorial#2</h1>
 <h3>The Sensor Theremin:</h3>
 <img src="ThereminPictures/SensorFrontView.jpg" alt="how it works" width="800">
 <h3>Step One: Parts List and required materials:</h3>
