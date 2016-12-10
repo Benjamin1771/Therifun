@@ -50,10 +50,7 @@ An Interactive Sound Generating Device!
 <p>The Arduino is connected by way of USB to the computer and the Arduino software is started. After the code is pasted in, and uploaded, the user can calibrate the sensor. As light comes into the sensor, the tone will adjust and will be played through the buzzer. The user can interact by allowing more or less light into the sensor, which will adjust the pitch. The numeric values assigned can be played with to adjust the tones and pitches we hear coming from the buzzer allowing for a variety of experiences using the device.</p>
 
 <h3>Final Device</h3>
-<img src="ThereminPictures/SensorUncovered.png" alt="Uncovered Theremin" width="400">
-
-
-
+<img src="ThereminPictures/LightTheremin.jpg" alt="Uncovered Theremin" width="800">
 
 <h1>Tutorial</h1>
 <h3>The Sensor Theremin:</h3>
