@@ -10,7 +10,7 @@ An Interactive Sound Generating Device!
 <p>Each symbol in the solution is attached to a different part of the Makey Makey board. They use the connections for the board for WASDFG. All of the other symbols are wired together and then to the Makey Makey board’s space entry part. The “mystical artifact” that the player must guide is attached to the ground.</p>
 <p>The JavaScript on the page takes every input from the map interface and stores them in an array. The array holds up to six values. Whenever a new value is added, it removes the oldest entry of the six and checks to see if the last entered six values matches the expected or correct entry. If this is the case the browser plays victory music.</p>
 
-<img src="build images/0 - 0 how it works.png" alt="how it works" width="800">
+<img src="build Prototype final.png" alt="how it works" width="800">
 
 <h1>Tutorial</h1>
 <h3>You Need:</h3>
