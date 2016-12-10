@@ -50,8 +50,8 @@ An Interactive Sound Generating Device!
 <p>The Arduino is connected by way of USB to the computer and the Arduino software is started. After the code is pasted in, and uploaded, the user can calibrate the sensor. As light comes into the sensor, the tone will adjust and will be played through the buzzer. The user can interact by allowing more or less light into the sensor, which will adjust the pitch. The numeric values assigned can be played with to adjust the tones and pitches we hear coming from the buzzer allowing for a variety of experiences using the device.</p>
 
 <h3>Final Device</h3>
-<img src="ThereminPictures/SensorUncovered.png" alt="how it works" width="800">
-<img src="ThereminPictures/SensorUncoveredSide.png" alt="how it works" width="800">
+<img src="ThereminPictures/SensorUncovered.png" alt="Uncovered Theremin" width="400">
+<img src="ThereminPictures/SensorUncoveredSide.png" alt="Uncovered Theremin Side" width="400">
 
 
 
@@ -89,14 +89,6 @@ An Interactive Sound Generating Device!
 
 <h3>Step Three - JavaScript</h3>
 <p>The JavaScript used for this project is attached in a separate folder, but I will further explain the logic here. The device has 3 components: a sensor which measures distance, LED lights that turn off and on, and a buzzer that produces set frequency tones based on values of the sensor. The JavaScript starts by defining which pins to receive the sensor values from, which pins to send power on and off to for the LED’s, and the buzzers location. The int’s defined are the sound frequencies produced (measured in hertz). In the void setup, we tell the pinMode where to provide input and outputs for the mentioned devices. In the void loop, we write a series of if statements to determine when to play each tone, and turn on or off each LED light. I found that 3 separate tones allowed for the clearest distinction in separating tones, but this can easily be manipulated to each users preference; just adjust distance, and write addition if statements linked to new sound int’s defined in addition hertz values. The same logic could be used to add additional LED lights – just include them in the new if statements.</p>
-<img src="build images/2 - 1 add beading wire.jpg" alt="add beading wire" width="200">
-<img src="build images/2 - 2 connect all dummies.jpg" alt="connect all dummies" width="200">
-<img src="build images/2 - 3 connect all dummies to space.jpg" alt="connect to space" width="200">
-<img src="build images/2 - 4 male to male wires.jpg" alt="male to male wires" width="200">
-<img src="build images/2 - 5 alligater clips labeled.jpg" alt="alligator clips" width="200">
-<img src="build images/2 - 5 use the back.jpg" alt="WASDFG" width="200">
-<img src="build images/2 - 6 connect alligator cord to the ground.jpg" alt="connect alligator cord to the ground" width="200">
-<img src="build images/2 - 6 connect ground to object.jpg" alt="connect ground to object" width="200">
 
 <h3>Step Four - Connection and User Interaction)</h3>
 <p>After the code is uploaded, as the user places an object or themselves at different distances from the sensor, the predetermined frequency tones will be produced through the buzzer, and the LED’s will turn off and on in sequence. As the sensors distance value changes, this will adjust the pitch and LED’s. The numeric values assigned can be played with and adjusted to change the tones and pitches we hear coming from the buzzer allowing for a variety of experiences using the device.</p>
